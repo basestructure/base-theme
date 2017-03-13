@@ -1,0 +1,47 @@
+/* BASE_226 | LAYOUT | 226_BASE | SC - 2016-02-04 */
+
+// -------------------------------------
+// FORMULA
+
+	%sc-csw-formula {}
+
+	%sc-content-formula {}
+
+	%sc-sidebarprimary-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%sc-csw {
+		width: 100%;
+		float: right;
+		padding: 3rem;
+	}
+
+	%sc-content {
+		width: 70%;
+		float: right;
+	}
+
+	%sc-sidebarprimary {
+		width: 25%;
+		float: left;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-content .content-sidebar-wrap {
+		@extend %sc-csw-formula !optional;
+		@extend %sc-csw !optional;
+	}
+
+	.sidebar-content .content {
+		@extend %sc-content-formula !optional;
+		@extend %sc-content !optional;
+	}
+
+	.sidebar-content .sidebar-primary {
+		@extend %sc-sidebarprimary-formula !optional;
+		@extend %sc-sidebarprimary !optional;
+	}

@@ -1,0 +1,62 @@
+/* BASE_230 | WIDGET | 230_BASE | WIDGET - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%widget {}
+
+		%sidebar-widget {}
+		%sidebarprimary-widget {}
+		%sidebarsecondary-widget {}
+		%siteheader-widget {}
+		%footerwidgets-widget {}
+		%afterentry-widget {}
+
+// -------------------------------------
+// SELECTORS
+
+	.widget {
+		@extend %widget !optional;
+	}
+
+		// SIDEBAR
+
+		.sidebar {
+			.widget {
+				@extend %sidebar-widget !optional;
+			}
+		}
+		.sidebar.sidebar-primary {
+			.widget {
+				@extend %sidebarprimary-widget !optional;
+			}
+		}
+		.sidebar.sidebar-secondary {
+			.widget {
+				@extend %sidebarsecondary-widget !optional;
+			}
+		}
+
+		// SITE-HEADER
+
+		.site-header {
+			.widget {
+				@extend %siteheader-widget !optional;				
+			}
+		}
+
+		// FOOTER-WIDGETS
+
+		.footer-widgets {
+			.widget {
+				@extend %footerwidgets-widget !optional;
+			}
+		}
+
+		// AFTER-ENTRY
+
+		.after-entry {
+			.widget {
+				@extend %afterentry-widget !optional;
+			}
+		}

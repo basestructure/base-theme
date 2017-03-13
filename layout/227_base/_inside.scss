@@ -1,0 +1,13 @@
+/* BASE_227 | LAYOUT | 227_BASE | INSIDE - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	%inside {}
+
+// -------------------------------------
+// SELECTORS
+
+	.inside {
+		@extend %inside !optional;
+	}

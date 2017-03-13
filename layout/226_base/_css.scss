@@ -1,0 +1,59 @@
+/* BASE_226 | LAYOUT | 226_BASE | CSS - 2016-02-04 */
+
+// -------------------------------------
+// FORMULA
+
+	%css-csw-formula {}
+
+	%css-content-formula {}
+
+	%css-sidebarprimary-formula {}
+
+	%css-sidebarsecondary-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%css-csw {
+		width: 80%;
+		float: left;
+		padding: 3rem;
+	}
+
+	%css-content {
+		width: 70%;
+		float: left;
+	}
+
+	%css-sidebarprimary {
+		width: 25%;
+		float: right;
+	}
+
+	%css-sidebarsecondary {
+		width: 20%;
+		float: right;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.content-sidebar-sidebar .content-sidebar-wrap {
+		@extend %css-csw-formula !optional;
+		@extend %css-csw !optional;
+	}
+
+	.content-sidebar-sidebar .content {
+		@extend %css-content-formula !optional;
+		@extend %css-content !optional;
+	}
+
+	.content-sidebar-sidebar .sidebar-primary {
+		@extend %css-sidebarprimary-formula !optional;
+		@extend %css-sidebarprimary !optional;
+	}
+
+	.content-sidebar-sidebar .sidebar-secondary {
+		@extend %css-sidebarsecondary-formula !optional;
+		@extend %css-sidebarsecondary !optional;
+	}

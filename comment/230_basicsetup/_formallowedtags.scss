@@ -1,0 +1,19 @@
+/* BASE_230 | COMMENT | 230_BASICSETUP | FORMALLOWEDTAGS - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+// FORM-ALLOWED-TAGS
+
+	%formallowedtags {}
+
+// -------------------------------------
+// SELECTORS
+
+// FORM-ALLOWED-TAGS
+
+	.form-allowed-tags {
+		@extend .comment-meta !optional;
+
+		@extend %formallowedtags !optional;
+	}

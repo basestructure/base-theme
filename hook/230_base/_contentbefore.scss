@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | CONTENTBEFORE - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%contentbefore {}
+	%contentbefore-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.contentbefore {
+		@extend %contentbefore !optional;
+	
+		.hookwrap {
+			@extend %contentbefore-hookwrap !optional;		
+		}
+
+	}

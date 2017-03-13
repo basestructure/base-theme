@@ -1,0 +1,15 @@
+/* BASE_230 | PLUGIN | 230_BASE | GRAVITYFORMS - 2016-11-30 */
+
+// -------------------------------------
+// EXTEND
+
+
+
+// -------------------------------------
+// SELECTORS
+
+	body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input,
+	body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+	body .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+		margin-top: 2px;		
+	}

@@ -1,0 +1,44 @@
+/* BASE_230 | LAYOUT | 230_BASE > BASE-STARTER | CS - 2017-02-07 */
+
+// -------------------------------------
+// EXTEND
+
+	%cs-csw_layout {
+		float: left;
+		width: 100%;
+	}
+
+	%cs-content_layout {
+		float: left;
+		width: 70%;
+
+		@include responsive-range(meddown) {
+			width: 60%;
+		}
+		@extend %responsive-layout-max !optional;
+	}
+
+	%cs-sidebarprimary_layout {
+		float: right;
+		width: 28%;
+
+		@include responsive-range(meddown) {
+			width: 38%;
+		}
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.content-sidebar .content-sidebar-wrap {
+		@extend %cs-csw_layout !optional;
+	}
+
+	.content-sidebar .content {
+		@extend %cs-content_layout !optional;
+	}
+
+	.content-sidebar .sidebar-primary {
+		@extend %cs-sidebarprimary_layout !optional;
+	}

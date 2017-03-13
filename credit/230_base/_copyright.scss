@@ -1,0 +1,23 @@
+/* BASE_230 | MODULE | 230_BASE | COPYRIGHT - 2016-07-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%copyright {}
+		%copyright-a {}
+		%copyright-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.copyright {
+		@extend %copyright !optional;
+
+		a {
+			@extend %copyright-a !optional;
+
+			&:hover {
+				@extend %copyright-hvr !optional;
+			}
+		}
+	}

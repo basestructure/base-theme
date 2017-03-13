@@ -1,0 +1,17 @@
+/* BASE_230 | PLUGIN | 230_BASE | SIMPLETOOLTIPS - 2016-07-25 */
+
+// -------------------------------------
+// EXTEND
+
+
+
+// -------------------------------------
+// SELECTORS
+
+	.tooltips {
+		color: $color-link;
+
+		&:hover {
+			color: $color-hover;
+		}
+	}

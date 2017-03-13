@@ -1,0 +1,31 @@
+/* BASE_230 | COMMENT | 230_BASE | COMMENTCONTENT - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-CONTENT
+
+	%commentcontent {
+		margin-left: 3.5rem;	// adds left indent space on content area for main page
+	}
+
+// CHILDREN COMMENT-CONTENT
+
+	%children-commentcontent {
+		margin-left: 2.5rem;	// adds left indent space on content area for replies
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-CONTENT
+
+	.comment-content {
+		@extend %commentcontent !optional;
+	}
+
+// CHILDREN COMMENT-CONTENT
+
+	.children .comment-content {
+		@extend %children-commentcontent !optional;
+	}

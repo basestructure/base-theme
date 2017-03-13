@@ -1,0 +1,27 @@
+/* BASE_226 | GUI | 226_BASE | BACKGROUND - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%bg-white {
+		background-color: $color-white;
+	}
+	%bg-black {
+		background-color: $color-black;
+	}
+	%bg-gray {
+		background-color: $color-gray;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.bg-white {
+		@extend %bg-white !optional;
+	}
+	.bg-black {
+		@extend %bg-black !optional;
+	}
+	.bg-gray {
+		@extend %bg-gray !optional;
+	}

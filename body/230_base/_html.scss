@@ -1,0 +1,13 @@
+/* BASE_230 | STRUCTURE | 230_BASE | HTML - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%html {}
+
+// -------------------------------------
+// SELECTORS
+
+	html {
+		@extend %html !optional;
+	}

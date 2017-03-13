@@ -1,0 +1,89 @@
+/* BASE_226 | GUI | 227_BASE | ALIGN - 2016-03-30 */
+
+// -------------------------------------
+// EXTEND
+
+// ALIGN
+
+	%alignleft {
+		float: left;
+	}
+	%alignright {
+		float: right;
+	}
+	%aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	%alignnone {
+		float: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// TEXT-ALIGN (bootstrap)
+
+	.textleft {
+		text-align: left;
+	}
+	.textcenter {
+		text-align: center;
+	}
+	.textright {
+		text-align: right;
+	}
+	.textjustify {
+		text-align: justify;
+	}
+	.textnowrap {
+		white-space: nowrap;
+	}
+
+// ALIGN
+
+	.alignleft {
+		@extend %alignleft !optional;
+	}
+	.alignright {
+		@extend %alignright !optional;
+	}
+	.aligncenter {
+		@extend %aligncenter !optional;
+	}
+
+// IMG.ALIGN
+
+	img.alignleft {
+		@extend .alignleft !optional;
+	}
+	img.alignright {
+		@extend .alignright !optional;
+	}
+	img.aligncenter {
+		@extend %aligncenter !optional;
+	}
+
+// IMAGE-ALIGN
+
+	.imageleft {
+		//@extend %alignleft !optional;
+	}
+	.imagecenter {
+		//@extend %aligncenter !optional;
+	}
+	.imageright {
+		//@extend %alignright !optional;
+	}
+
+// ALIGN.WP-CAPTION
+
+	.alignleft.wp-caption {
+		@extend %alignleft !optional;
+	}
+	.aligncenter.wp-caption {
+		@extend %aligncenter !optional;
+	}
+	.alignright.wp-caption {
+		@extend %alignright !optional;
+	}

@@ -1,0 +1,61 @@
+/* BASE_226 | GUI | 226_BASE | FORM - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+// INPUT BUTTON
+
+	%input-button {}
+	%input-button-link {}
+	%input-button-hover {}
+
+// INPUT RESET
+
+	%input-reset {}
+	%input-reset-link {}
+	%input-reset-hover {}
+
+// INPUT SUBMIT
+
+	%input-submit {}
+	%input-submit-link {}
+	%input-submit-hover {}
+
+// -------------------------------------
+// SELECTORS
+
+// BUTTON
+
+	button {
+		@extend %button !optional;
+	}
+	button:hover {
+		@extend %button-hover !optional;
+	}	
+
+// INPUT BUTTON
+
+	input[type="button"] {
+		@extend %button !optional;
+	}
+	input:hover[type="button"] {
+		@extend %button-hover !optional;
+	}
+
+// INPUT RESET
+
+	input[type="reset"] {
+		@extend %button !optional;
+	}
+	input:hover[type="reset"] {
+		@extend %button-hover !optional;
+	}
+
+// INPUT SUBMIT
+
+	input[type="submit"] {
+		@extend %button !optional;
+	}
+	input:hover[type="submit"] {
+		@extend %button-hover !optional;
+	}

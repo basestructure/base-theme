@@ -1,0 +1,37 @@
+/* BASE_226 | META | 226_BASE | BREADCRUMB - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	%breadcrumb-formula {}
+		%breadcrumb-a-formula {}
+		%breadcrumb-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%breadcrumb {
+		font-size: #{$fontsize-xsml}rem;
+		border-bottom: 1px solid #bbb;
+		margin-bottom: #{$space-default}rem;
+	}
+		%breadcrumb-a {}
+		%breadcrumb-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.breadcrumb {
+		@extend %breadcrumb-formula !optional;
+		@extend %breadcrumb !optional;
+	
+		a {
+			@extend %breadcrumb-a-formula !optional;
+			@extend %breadcrumb-a !optional;
+		}
+
+		a:hover {
+			@extend %breadcrumb-hvr-formula !optional;
+			@extend %breadcrumb-hvr !optional;
+		}
+	}

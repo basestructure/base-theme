@@ -1,0 +1,85 @@
+/* BASE_226 | GUI | 226_BASE | CLEARFIX - 2016-01-12 */
+
+// -------------------------------------
+// USAGE
+// -------------------------------------
+
+	// .clearfix
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// CLEARFIX
+
+	%clearfix {
+		*zoom: 1;
+		&:before, &:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	%clearfix-left {
+		content:"";
+    	display:table;
+    	clear:left;
+	}
+	%clearfix-right {
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+	}
+
+// CLEAR
+
+	%clear-both {
+		clear: both;
+	}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// CLEARFIX
+
+	.clearfix {
+		@extend %clearfix !optional;
+	}
+	.site-header {
+		@extend .clearfix !optional;
+	}
+	.site-inner {
+		@extend .clearfix !optional;
+	}
+	.content-sidebar {
+		.content-sidebar-wrap {
+			@extend .clearfix !optional;
+		}
+	}
+	.footer-widgets {
+		@extend .clearfix !optional;
+	}
+	.site-footer {
+		@extend .clearfix !optional;
+	}
+	.wrap {
+		@extend .clearfix !optional;
+	}
+	.widget {
+		//@extend .clearfix !optional;
+	}
+	.widget-area {
+		//@extend .clearfix !optional;
+	}
+	.widget-title {
+		//@extend .clearfix !optional;
+	}
+	.widget-wrap {
+		//@extend .clearfix !optional;
+	}

@@ -1,0 +1,30 @@
+/* BASE_226 | COMMENT | 227_BASE | ENTRYCOMMENTS - 2016-04-22 */
+
+// -------------------------------------
+// EXTEND
+
+// ENTRY-COMMENTS
+
+	%entrycomments {
+		margin-top: #{$space-double}rem;
+	}
+
+// ENTRY-COMMENTS H3
+
+	%entrycomments-h3 {}
+
+// -------------------------------------
+// SELECTORS
+
+// ENTRY-COMMENTS
+
+	.entry-comments {
+		@extend %entrycomments !optional;
+	}
+
+// ENTRY-COMMENTS
+
+	.entry-comments h3 {
+		@extend %entrycomments-h3-formula !optional;
+		@extend %entrycomments-h3 !optional;
+	}

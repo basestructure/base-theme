@@ -1,0 +1,156 @@
+/* BASE_226 | GUI | 226_BASE | PAD-CSW - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	body.pad-csw .content-sidebar-wrap {
+		@extend %pad !optional;
+	}
+
+	body.pad-top-csw .content-sidebar-wrap {
+		@extend %padtop !optional;
+	}
+	body.pad-right-csw .content-sidebar-wrap {
+		@extend %padright !optional;
+	}
+	body.pad-bottom-csw .content-sidebar-wrap {
+		@extend %padbottom !optional;
+	}
+	body.pad-left-csw .content-sidebar-wrap {
+		@extend %padleft !optional;
+	}
+
+	body.pad-vertical-csw .content-sidebar-wrap {
+		//@extend %padvertical !optional;
+	}
+	body.pad-horizontal-csw .content-sidebar-wrap {
+		//@extend %padhorizontal !optional;
+	}
+
+	body.pad-rightbottom-csw .content-sidebar-wrap {
+		//@extend %padrightbottom !optional;
+	}
+	body.pad-leftbottom-csw .content-sidebar-wrap {
+		//@extend %padleftbottom !optional;
+	}
+
+// PAD DOUBLE
+
+	body.pad-double-csw .content-sidebar-wrap {
+		//@extend %pad-double !optional;
+	}
+
+	body.pad-top-double-csw .content-sidebar-wrap {
+		//@extend %padtop-double !optional;
+	}
+	body.pad-right-double-csw .content-sidebar-wrap {
+		//@extend %padright-double !optional;
+	}
+	body.pad-bottom-double-csw .content-sidebar-wrap {
+		//@extend %padbottom-double !optional;
+	}
+	body.pad-left-double-csw .content-sidebar-wrap {
+		//@extend %padleft-double !optional;
+	}
+
+	body.pad-vertical-double-csw .content-sidebar-wrap {
+		//@extend %padvertical-double !optional;
+	}
+	body.pad-horizontal-double-csw .content-sidebar-wrap {
+		//@extend %padhorizontal-double !optional;
+	}
+
+	body.pad-rightbottom-double-csw .content-sidebar-wrap {
+		//@extend %padrightbottom-double !optional;
+	}
+	body.pad-leftbottom-double-csw .content-sidebar-wrap {
+		//@extend %padleftbottom-double !optional;
+	}
+
+// PAD HALF
+
+	body.pad-half-csw .content-sidebar-wrap {
+		//@extend %pad-half !optional;
+	}
+
+	body.pad-top-half-csw .content-sidebar-wrap {
+		//@extend %padtop-half !optional;
+	}
+	body.pad-right-half-csw .content-sidebar-wrap {
+		//@extend %padright-half !optional;
+	}
+	body.pad-bottom-half-csw .content-sidebar-wrap {
+		//@extend %padbottom-half !optional;
+	}
+	body.pad-left-half-csw .content-sidebar-wrap {
+		//@extend %padleft-half !optional;
+	}
+
+	body.pad-vertical-half-csw .content-sidebar-wrap {
+		//@extend %padvertical-half !optional;
+	}
+	body.pad-horizontal-half-csw .content-sidebar-wrap {
+		//@extend %padhorizontal-half !optional;
+	}
+
+	body.pad-rightbottom-half-csw .content-sidebar-wrap {
+		//@extend %padrightbottom-half !optional;
+	}
+	body.pad-leftbottom-half-csw .content-sidebar-wrap {
+		//@extend %padleftbottom-half !optional;
+	}
+
+// PAD QUARTER
+
+	body.pad-quarter-csw .content-sidebar-wrap {
+		//@extend %pad-quarter !optional;
+	}
+
+	body.pad-top-quarter-csw .content-sidebar-wrap {
+		//@extend %padtop-quarter !optional;
+	}
+	body.pad-right-quarter-csw .content-sidebar-wrap {
+		//@extend %padright-quarter !optional;
+	}
+	body.pad-bottom-quarter-csw .content-sidebar-wrap {
+		//@extend %padbottom-quarter !optional;
+	}
+	body.pad-left-quarter-csw .content-sidebar-wrap {
+		//@extend %padleft-quarter !optional;
+	}
+
+	body.pad-vertical-quarter-csw .content-sidebar-wrap {
+		//@extend %padvertical-quarter !optional;
+	}
+	body.pad-horizontal-quarter-csw .content-sidebar-wrap {
+		//@extend %padhorizontal-quarter !optional;
+	}
+
+	body.pad-rightbottom-quarter-csw .content-sidebar-wrap {
+		//@extend %padrightbottom-quarter !optional;
+	}
+	body.pad-leftbottom-quarter-csw .content-sidebar-wrap {
+		//@extend %padleftbottom-quarter !optional;
+	}
+
+// PAD ZERO
+
+	body.pad-zero-csw .content-sidebar-wrap {
+		@extend %pad-zero !optional;
+	}
+
+	body.pad-top-zero-csw .content-sidebar-wrap {
+		@extend %padtop-zero !optional;
+	}
+	body.pad-right-zero-csw .content-sidebar-wrap {
+		@extend %padright-zero !optional;
+	}
+	body.pad-bottom-zero-csw .content-sidebar-wrap {
+		@extend %padbottom-zero !optional;
+	}
+	body.pad-left-zero-csw .content-sidebar-wrap {
+		@extend %padleft-zero !optional;
+	}

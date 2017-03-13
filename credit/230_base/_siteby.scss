@@ -1,0 +1,23 @@
+/* BASE_230 | MODULE | 230_BASE | SITEBY - 2016-07-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%siteby {}
+		%siteby-a {}
+		%siteby-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.siteby {
+		@extend %siteby !optional;
+
+		a {
+			@extend %siteby-a !optional;
+
+			&:hover {
+				@extend %siteby-hvr !optional;
+			}
+		}
+	}

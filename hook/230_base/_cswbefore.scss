@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | CSWBEFORE - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%cswbefore {}
+	%cswbefore-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.cswbefore {
+		@extend %cswbefore !optional;
+	
+		.hookwrap {
+			@extend %cswbefore-hookwrap !optional;
+		}
+
+	}

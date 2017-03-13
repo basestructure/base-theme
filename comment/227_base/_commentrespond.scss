@@ -1,0 +1,31 @@
+/* BASE_226 | COMMENT | 227_BASE | COMMENTRESPOND - 2016-04-22 */
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-RESPOND
+
+	%commentrespond {}
+
+// COMMENT-RESPOND COMMENT-REPLY-TITLE
+
+	%commentrespond-h3 {}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-RESPOND
+
+	.comment-respond {
+		@extend .entry-comments !optional;
+
+		@extend %commentrespond !optional;
+	}
+
+// COMMENT-RESPOND
+
+	.comment-respond h3 {
+		@extend .entry-comments-h3 !optional;
+
+		@extend %commentrespond-h3 !optional;
+	}

@@ -1,0 +1,88 @@
+/* BASE_227 | LAYOUT | 227_BASE | FOOTER - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-FOOTER
+
+	%sitefooter {}
+	%sitefooterwrap {
+		max-width: #{$width-base}rem;
+		margin-right: auto;
+		margin-left: auto;
+		@extend %boxsizing-borderbox !optional;
+	}
+	%sitefooterwraponly {}
+
+	// FOOTER-WIDGETS
+
+	%footerwidgets {}
+	%footerwidgetswrap {
+		max-width: #{$width-base}rem;
+		margin-right: auto;
+		margin-left: auto;
+		@extend %boxsizing-borderbox !optional;
+	}
+	%footerwidgetswraponly {}
+
+	%footerwidgets1 {
+		width: 30%;
+		margin-right: 3%;
+		float: left;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	%footerwidgets2 {
+		width: 30%;
+		margin-right: 3%;
+		float: left;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	%footerwidgets3 {
+		width: 34%;
+		float: left;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-FOOTER
+
+	.site-footer {
+		@extend %sitefooter !optional;
+
+		.wrap {
+			@extend %sitefooterwrap !optional;
+		}
+	}
+	.site-footer > .wrap {
+		@extend %sitefooterwraponly !optional;
+	}
+
+	// FOOTER-WIDGETS
+
+	.footer-widgets {
+		@extend %footerwidgets !optional;
+
+		.wrap {
+			@extend %footerwidgetswrap !optional;
+		}
+	}
+	.footer-widgets > .wrap {
+		@extend %footerwidgetswraponly !optional;
+	}
+
+	.footer-widgets-1 {
+		@extend %footerwidgets1 !optional;
+	}
+
+	.footer-widgets-2 {
+		@extend %footerwidgets2 !optional;
+	}
+
+	.footer-widgets-3 {
+		@extend %footerwidgets3 !optional;
+	}

@@ -1,0 +1,31 @@
+/* BASE_230 | HOOK | 230_BASE | HEADERBEFORE - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%headerbefore {}
+	%headerbefore-hookwrap {}
+
+	%headerbeforehome {}
+	%headerbeforehome-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.headerbefore {
+		@extend %headerbefore !optional;
+	
+		.hookwrap {
+			@extend %headerbefore-hookwrap !optional;		
+		}
+
+	}
+
+	.home .headerbefore {
+		@extend %headerbeforehome !optional;
+	
+		.hookwrap {
+			@extend %headerbeforehome-hookwrap !optional;		
+		}
+
+	}

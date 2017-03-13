@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | CSWAFTER - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%cswafter {}
+	%cswafter-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.cswafter {
+		@extend %cswafter !optional;
+	
+		.hookwrap {
+			@extend %cswafter-hookwrap !optional;
+		}
+
+	}

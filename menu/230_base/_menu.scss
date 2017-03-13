@@ -1,0 +1,68 @@
+/* BASE_230 | MENU | 230_BASE | MENU - 2016-09-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// MENU
+	%menu {}
+
+	// MENU-PRIMARY & MENU-SECONDARY
+	%menuboth {}
+
+	// MENU-PRIMARY
+	%menumenuprimary {}
+
+	// MENU-SECONDARY
+	%menumenusecondary {}
+
+	// WIDGET MENU
+	%menu-widget {}
+
+	// SIDEBAR MENU
+	%menu-sidebar {}
+
+	// FOOTER-WIDGETS MENU
+	%menu-footerwidgets {}
+
+	// GENESIS-NAV-MENU
+	%menugnm {}
+
+	// PREFIX MENU
+	%menu-prefix {}
+
+// -------------------------------------
+// SELECTORS
+
+	.menu {
+		@extend %menu !optional;
+	}
+
+	.menu-primary {
+		@extend %menuboth !optional;
+		@extend %menumenuprimary !optional;
+	}
+
+	.menu-secondary {
+		@extend %menuboth !optional;
+		@extend %menumenusecondary !optional;
+	}
+
+	.widget .menu {
+		@extend %menu-widget !optional;
+	}
+
+	.sidebar .menu {
+		@extend %menu-sidebar !optional;
+	}
+
+	.footer-widgets .menu {
+		@extend %menu-footerwidgets !optional;
+	}
+
+	.genesis-nav-menu {
+		@extend %menugnm !optional;
+	}
+
+	.prefix .menu {
+		@extend %menu-prefix !optional;
+	}

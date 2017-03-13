@@ -1,0 +1,53 @@
+/* BASE_230 | MENU | 230_BASE | TOGGLE - 2016-09-16 */
+
+// -------------------------------------
+// EXTEND
+
+	%both-toggle {}
+	%menu-toggle {}
+	%submenu-toggle {}
+
+	%both-button-toggle {}
+	%menu-button-toggle {}
+	%submenu-button-toggle {}
+
+	%menu-toggle-before {}
+	%menu-toggle-activatedbefore {}
+
+	%submenu-toggle-before {}
+	%submenu-toggle-activatedbefore {}
+
+// -------------------------------------
+// SELECTORS
+
+	.menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %menu-toggle !optional;
+	}
+	.sub-menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %submenu-toggle !optional;
+	}
+
+	button.menu-toggle {
+		@extend %both-button-toggle !optional;
+		@extend %menu-button-toggle !optional;
+	}
+	button.sub-menu-toggle {
+		@extend %both-button-toggle !optional;
+		@extend %submenu-button-toggle !optional;
+	}
+
+	.menu-toggle:before {
+		@extend %menu-toggle-before !optional;
+	}
+	.menu-toggle.activated:before {
+		@extend %menu-toggle-activatedbefore !optional;
+	}
+
+	.sub-menu-toggle:before {
+		@extend %submenu-toggle-before !optional;
+	}
+	.sub-menu-toggle.activated:before {
+		@extend %submenu-toggle-activatedbefore !optional;
+	}

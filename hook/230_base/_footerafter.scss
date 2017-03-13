@@ -1,0 +1,31 @@
+/* BASE_230 | HOOK | 230_BASE | FOOTERAFTER - 2016-08-03 */
+
+// -------------------------------------
+// EXTEND
+
+	%footerafter {}
+	%footerafter-hookwrap {}
+
+	%footerafterhome {}
+	%footerafterhome-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.footerafter {
+		@extend %footerafter !optional;
+	
+		.hookwrap {
+			@extend %footerafter-hookwrap !optional;		
+		}
+
+	}
+
+	.home .footerafter {
+		@extend %footerafterhome !optional;
+	
+		.hookwrap {
+			@extend %footerafterhome-hookwrap !optional;		
+		}
+
+	}

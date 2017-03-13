@@ -1,0 +1,27 @@
+/* BASE_226 | GUI | 226_BASE | COLOR - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%color-white {
+		color: $color-white;
+	}
+	%color-black {
+		color: $color-black;
+	}
+	%color-gray {
+		color: $color-gray;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.color-white {
+		@extend %color-white !optional;
+	}
+	.color-black {
+		@extend %color-black !optional;
+	}
+	.color-gray {
+		@extend %color-gray !optional;
+	}

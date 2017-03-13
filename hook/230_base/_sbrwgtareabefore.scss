@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | SBRWGTAREABEFORE - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%sbrwgtareabefore {}
+	%sbrwgtareabefore-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.sbrwgtareabefore {
+		@extend %sbrwgtareabefore !optional;
+	
+		.hookwrap {
+			@extend %sbrwgtareabefore-hookwrap !optional;		
+		}
+
+	}

@@ -1,0 +1,75 @@
+/* BASE_226 | GUI | 227_BASE | BOX - 2017-04-28 */
+
+// -------------------------------------
+// USAGE
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%box {
+		max-width: 400px;
+	}
+	%box-inner {}
+
+	%box-43 {
+		max-width: 400px;
+		width: 100%;
+	}
+	%box-43-inner {
+		width: 100%;
+		height: auto;
+		padding-top: 75%;
+		background-color: red;
+		background-image: url(images/guide-ratio.png);
+		background-color: #bed0d2;
+		background-position: top left;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	%box-169 {
+		max-width: 400px;
+		width: 100%;
+	}
+	%box-169-inner {
+		width: 100%;
+		height: auto;
+		padding-top: 56.25%;
+		background-color: green;
+		background-image: url(images/guide-ratio.png);
+		background-color: #bed0d2;
+		background-position: top left;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.box {
+		@extend %box !optional;
+
+		.box-inner {
+			@extend %box-inner !optional;			
+		}
+	}
+
+	.box-43 {
+		@extend %box-43 !optional;
+
+		.box-inner {
+			@extend %box-43-inner !optional;
+		}
+	}
+
+	.box-169 {
+		@extend %box-169 !optional;
+
+		.box-inner {
+			@extend %box-169-inner !optional;
+		}
+	}

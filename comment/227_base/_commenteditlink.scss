@@ -1,0 +1,21 @@
+/* BASE_226 | COMMENT | 227_BASE | COMMENTEDITLINK - 2016-04-22 */
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-EDIT-LINK
+
+	%commenteditlink {
+		font-size: #{$fontsize-xxsml}rem;
+		line-height: 1.2;
+		display: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-EDIT-LINK
+
+	.comment-edit-link {
+		@extend %commenteditlink !optional;
+	}

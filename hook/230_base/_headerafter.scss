@@ -1,0 +1,31 @@
+/* BASE_230 | HOOK | 230_BASE | HEADERAFTER - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%headerafter {}
+	%headerafter-hookwrap {}
+
+	%headerafterhome {}
+	%headerafterhome-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.headerafter {
+		@extend %headerafter !optional;
+	
+		.hookwrap {
+			@extend %headerafter-hookwrap !optional;		
+		}
+
+	}
+
+	.home .headerafter {
+		@extend %headerafterhome !optional;
+	
+		.hookwrap {
+			@extend %headerafterhome-hookwrap !optional;		
+		}
+
+	}

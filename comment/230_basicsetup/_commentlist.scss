@@ -1,0 +1,52 @@
+/* BASE_230 | COMMENT | 230_BASICSETUP | COMMENTLIST - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-LIST
+
+	%commentlist {
+		list-style-type: none;
+		//margin-top: #{$space-default}rem;
+		margin-left: 0;
+		margin-top: #{$space-default}rem;
+	}
+
+// COMMENT-LIST LI
+
+	%commentlist-li {}
+
+	// COMMENT-LIST LI A
+
+		%commentlist-li-a {}
+
+	// COMMENT-LIST LI A:HOVER
+
+		%commentlist-li-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.comment-list {
+		@extend %commentlist !optional;
+
+		li.comment {
+			@extend %commentlist-li !optional;
+		}
+	}
+
+	ol.comment-list {
+		@extend %commentlist !optional;
+
+		li.comment {
+			@extend %commentlist-li !optional;
+
+			a {
+				@extend %commentlist-li-a !optional;
+
+				&:hover {
+					@extend %commentlist-li-hvr !optional;
+				}
+			}
+		}
+	}

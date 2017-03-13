@@ -1,0 +1,28 @@
+/* BASE_226 | GUI | 226_BASE | ASIDE - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+// ALIGN
+
+	%aside {}
+
+	%asideleft {
+		float: left;
+	}
+	%asideright {
+		float: right;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	aside {
+		@extend %aside !optional;
+	}
+	aside.alignleft {
+		@extend %asideleft !optional;
+	}
+	aside.alignright {
+		@extend %asideright !optional;
+	}

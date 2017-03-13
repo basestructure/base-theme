@@ -1,0 +1,156 @@
+/* BASE_226 | GUI | 226_BASE | PAD-CONTENT - 2016-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	body.pad-content .content {
+		@extend %pad !optional;
+	}
+
+	body.pad-top-content .content {
+		@extend %padtop !optional;
+	}
+	body.pad-right-content .content {
+		@extend %padright !optional;
+	}
+	body.pad-bottom-content .content {
+		@extend %padbottom !optional;
+	}
+	body.pad-left-content .content {
+		@extend %padleft !optional;
+	}
+
+	body.pad-vertical-content .content {
+		//@extend %padvertical !optional;
+	}
+	body.pad-horizontal-content .content {
+		//@extend %padhorizontal !optional;
+	}
+
+	body.pad-rightbottom-content .content {
+		//@extend %padrightbottom !optional;
+	}
+	body.pad-leftbottom-content .content {
+		//@extend %padleftbottom !optional;
+	}
+
+// PAD DOUBLE
+
+	body.pad-double-content .content {
+		//@extend %pad-double !optional;
+	}
+
+	body.pad-top-double-content .content {
+		//@extend %padtop-double !optional;
+	}
+	body.pad-right-double-content .content {
+		//@extend %padright-double !optional;
+	}
+	body.pad-bottom-double-content .content {
+		//@extend %padbottom-double !optional;
+	}
+	body.pad-left-double-content .content {
+		//@extend %padleft-double !optional;
+	}
+
+	body.pad-vertical-double-content .content {
+		//@extend %padvertical-double !optional;
+	}
+	body.pad-horizontal-double-content .content {
+		//@extend %padhorizontal-double !optional;
+	}
+
+	body.pad-rightbottom-double-content .content {
+		//@extend %padrightbottom-double !optional;
+	}
+	body.pad-leftbottom-double-content .content {
+		//@extend %padleftbottom-double !optional;
+	}
+
+// PAD HALF
+
+	body.pad-half-content .content {
+		//@extend %pad-half !optional;
+	}
+
+	body.pad-top-half-content .content {
+		//@extend %padtop-half !optional;
+	}
+	body.pad-right-half-content .content {
+		//@extend %padright-half !optional;
+	}
+	body.pad-bottom-half-content .content {
+		//@extend %padbottom-half !optional;
+	}
+	body.pad-left-half-content .content {
+		//@extend %padleft-half !optional;
+	}
+
+	body.pad-vertical-half-content .content {
+		//@extend %padvertical-half !optional;
+	}
+	body.pad-horizontal-half-content .content {
+		//@extend %padhorizontal-half !optional;
+	}
+
+	body.pad-rightbottom-half-content .content {
+		//@extend %padrightbottom-half !optional;
+	}
+	body.pad-leftbottom-half-content .content {
+		//@extend %padleftbottom-half !optional;
+	}
+
+// PAD QUARTER
+
+	body.pad-quarter-content .content {
+		//@extend %pad-quarter !optional;
+	}
+
+	body.pad-top-quarter-content .content {
+		//@extend %padtop-quarter !optional;
+	}
+	body.pad-right-quarter-content .content {
+		//@extend %padright-quarter !optional;
+	}
+	body.pad-bottom-quarter-content .content {
+		//@extend %padbottom-quarter !optional;
+	}
+	body.pad-left-quarter-content .content {
+		//@extend %padleft-quarter !optional;
+	}
+
+	body.pad-vertical-quarter-content .content {
+		//@extend %padvertical-quarter !optional;
+	}
+	body.pad-horizontal-quarter-content .content {
+		//@extend %padhorizontal-quarter !optional;
+	}
+
+	body.pad-rightbottom-quarter-content .content {
+		//@extend %padrightbottom-quarter !optional;
+	}
+	body.pad-leftbottom-quarter-content .content {
+		//@extend %padleftbottom-quarter !optional;
+	}
+
+// PAD ZERO
+
+	body.pad-zero-content .content {
+		@extend %pad-zero !optional;
+	}
+
+	body.pad-top-zero-content .content {
+		@extend %padtop-zero !optional;
+	}
+	body.pad-right-zero-content .content {
+		@extend %padright-zero !optional;
+	}
+	body.pad-bottom-zero-content .content {
+		@extend %padbottom-zero !optional;
+	}
+	body.pad-left-zero-content .content {
+		@extend %padleft-zero !optional;
+	}

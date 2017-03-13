@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | ENTRYFOOTER - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%entryfooter {}
+	%entryfooter-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.entryfooter {
+		@extend %entryfooter !optional;
+	
+		.hookwrap {
+			@extend %entryfooter-hookwrap !optional;		
+		}
+
+	}

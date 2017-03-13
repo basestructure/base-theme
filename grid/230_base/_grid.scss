@@ -1,0 +1,187 @@
+/* BASE_230 | GRID | 230_BASE | GRID - 2016-08-08 */
+
+// -------------------------------------
+// EXTEND
+
+// SPACE-ZERO
+
+	%column-last {
+		margin-right: 0;
+	}
+
+// LISTSTYLE-ZERO
+
+	%grid-liststyle {
+		list-style-type: none;
+	}
+
+// FULL
+
+	%grid-full {
+		width: 100%;
+		@extend %grid-liststyle !optional;
+	}
+
+// CLEARFIX
+
+	%grid-clear-left {
+		clear: left;
+	}
+
+	%grid-clear-right {
+		clear: right;
+	}
+
+// HALF
+
+	%grid-half {
+		@extend %column-half !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// THIRD
+
+	%grid-third {
+		@extend %column-third !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// FOURTH
+
+	%grid-fourth {
+		@extend %column-fourth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// FIFTH
+
+	%grid-fifth {
+		@extend %column-fifth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// SIXTH
+
+	%grid-sixth {
+		@extend %column-sixth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// EIGHT
+
+	%grid-eight {
+		@extend %column-eight !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// TWELVE
+
+	%grid-twelve {
+		@extend %column-twelve !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full {}
+
+// HALF
+
+	.half-grid > li {
+		@extend %grid-half-formula !optional;
+		@extend %grid-half !optional;
+	}
+	.half-grid > li:nth-child(2n+0) {
+		@extend %column-last !optional;
+	}
+	.half-grid > li:nth-child(4n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// THIRD
+
+	.third-grid > li {
+		@extend %grid-third-formula !optional;
+		@extend %grid-third !optional;
+	}
+	.third-grid > li:nth-child(3n+0) {
+		@extend %column-last !optional;
+	}
+	.third-grid > li:nth-child(3n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// FOURTH
+
+	.fourth-grid > li {
+		@extend %grid-fourth-formula !optional;
+		@extend %grid-fourth !optional;
+	}
+	.fourth-grid > li:nth-child(4n+0) {
+		@extend %column-last !optional;
+	}
+	.fourth-grid > li:nth-child(4n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// FIFTH
+
+	.fifth-grid > li {
+		@extend %grid-fifth-formula !optional;
+		@extend %grid-fifth !optional;
+	}
+	.fifth-grid > li:nth-child(5n+0) {
+		@extend %column-last !optional;
+	}
+	.fifth-grid > li:nth-child(5n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// SIXTH
+
+	.sixth-grid > li {
+		@extend %grid-sixth-formula !optional;
+		@extend %grid-sixth !optional;
+	}
+	.sixth-grid > li:nth-of-type(6n+0) {
+		@extend %column-last !optional;
+	}
+	.sixth-grid > li:nth-child(6n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// SIXTH
+
+	.eight-grid > li {
+		@extend %grid-eight-formula !optional;
+		@extend %grid-eight !optional;
+	}
+	.eight-grid > li:nth-of-type(8n+0) {
+		@extend %column-last !optional;
+	}
+	.eight-grid > li:nth-child(8n+1) {
+		@extend %grid-clear-left !optional;
+	}
+
+// TWELVE
+
+	.twelve-grid > li {
+		@extend %grid-twelve-formula !optional;
+		@extend %grid-twelve !optional;
+	}
+	.twelve-grid > li:nth-of-type(12n+0) {
+		@extend %column-last !optional;
+	}
+	.twelve-grid > li:nth-child(12n+1) {
+		@extend %grid-clear-left !optional;
+	}

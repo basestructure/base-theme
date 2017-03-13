@@ -1,0 +1,37 @@
+/* BASE_230 | COMMENT | 230_BASE | COMMENTMETA - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-META
+
+	%commentmeta {
+		font-size: #{$fontsize-xxsml}rem;
+		line-height: 1.2;
+		margin-bottom: #{$space-half}rem;
+	}
+
+	// COMMENT-META A
+
+		%commentmeta-a {}
+
+	// COMMENT-META A:HOVER
+
+		%commentmeta-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-META
+
+	.comment-meta {
+		@extend %commentmeta !optional;
+
+		a {
+			@extend %commentmeta-a !optional;
+
+			&:hover {
+				@extend %commentmeta-hvr !optional;
+			}
+		}
+	}

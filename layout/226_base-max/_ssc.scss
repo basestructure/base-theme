@@ -1,0 +1,55 @@
+/* BASE_226 | LAYOUT | 226_BASE-MAX | SSC - 2016-02-04 */
+
+// -------------------------------------
+// FORMULA
+
+	%ssc-csw-formula {}
+
+	%ssc-content-formula {}
+
+	%ssc-sidebarprimary-formula {}
+
+	%ssc-sidebarsecondary-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%ssc-csw {
+		float: right;
+		padding: 3rem;
+	}
+
+	%ssc-content {
+		float: right;
+	}
+
+	%ssc-sidebarprimary {
+		float: left;
+	}
+
+	%ssc-sidebarsecondary {
+		float: left;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@extend %ssc-csw-formula !optional;
+		@extend %ssc-csw !optional;
+	}
+
+	.sidebar-sidebar-content .content {
+		@extend %ssc-content-formula !optional;
+		@extend %ssc-content !optional;
+	}
+
+	.sidebar-sidebar-content .sidebar-primary {
+		@extend %ssc-sidebarprimary-formula !optional;
+		@extend %ssc-sidebarprimary !optional;
+	}
+
+	.sidebar-sidebar-content .sidebar-secondary {
+		@extend %ssc-sidebarsecondary-formula !optional;
+		@extend %ssc-sidebarsecondary !optional;
+	}

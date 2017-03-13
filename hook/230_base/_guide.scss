@@ -1,0 +1,27 @@
+/* BASE_230 | HOOK | 230_BASE | GUIDE - 2016-9-8 */
+
+// -------------------------------------
+// EXTEND
+
+	%hookguide {
+		font-size: #{$fontsize-xxsml}rem;
+		color: #999;
+		border: 2px solid #ccc;
+		padding: 5px;
+		background-color: yellow;
+	}
+	%hookguide-hookwrap {
+		background-color: gold;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.hook {
+		@extend %hookguide !optional;
+	
+		.hookwrap {
+			@extend %hookguide-hookwrap !optional;		
+		}
+
+	}

@@ -1,0 +1,104 @@
+/* BASE_230 | PANEL | 240_BASE | BASIC - 2017-01-17 */
+
+// -------------------------------------
+// EXTEND
+
+	// PANEL
+
+	%panel {}
+	%panel-main {
+		width: 70%;
+	}
+	%panel-side {
+		width: 30%;
+	}
+
+	// PANEL OUTER & INNER
+
+	%panel-outer {}
+	%panel-inner {}
+
+	// PANEL.MS
+
+	%panelms {}
+	%panelms-main {
+		@extend %alignleft !optional;
+	}
+	%panelms-side {
+		@extend %alignright !optional;
+	}
+
+	// PANEL.SM
+
+	%panelsm {}
+	%panelsm-main {
+		@extend %alignright !optional;
+	}
+	%panelsm-side {
+		@extend %alignleft !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// PANEL
+
+	.panel {
+		@extend %panel !optional;
+	}
+	.panel > .main,
+	.panel > .outer > .inner > .main {
+		@extend %panel-main !optional;
+	}
+	.panel > .side,
+	.panel > .outer > .inner > .side {
+		@extend %panel-side !optional;
+	}
+
+	// PANEL OUTER & INNER
+	.panel > .outer {
+		@extend %panel-outer !optional;
+	}
+	.panel > .outer > .inner {
+		@extend %panel-inner !optional;
+	}
+	.panel > .inner {
+		@extend %panel-inner !optional;
+	}
+
+	// PANEL.MS
+
+	.panel.ms {
+		@extend %panelms !optional;
+	}
+	.panel.ms > .main,
+	.panel.ms > .main.alignright,
+	.panel.ms > .outer > .inner > .main,
+	.panel.ms > .outer > .inner > .main.alignright {
+		@extend %panelms-main !optional;
+	}
+	.panel.ms > .side,
+	.panel.ms > .side.alignleft,
+	.panel.ms > .outer > .inner > .side,
+	.panel.ms > .outer > .inner > .side.alignleft {
+		@extend %panelms-side !optional;
+	}
+
+	// PANEL.SM
+
+	.panel.sm {
+		@extend %panelsm !optional;
+	}
+	.panel.sm > .main,
+	.panel.sm > .main.alignleft,
+	.panel.sm > .outer > .inner > .main,
+	.panel.sm > .outer > .inner > .main.alignleft {
+		@extend %panelsm-main !optional;
+	}
+	.panel.sm > .side,
+	.panel.sm > .side.alignright,
+	.panel.sm > .outer > .inner > .side,
+	.panel.sm > .outer > .inner > .side.alignright {
+		@extend %panelsm-side !optional;
+	}
+

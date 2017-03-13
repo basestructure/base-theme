@@ -1,0 +1,128 @@
+/* BASE_230 | ICON | 230_BASE | SOCIAL - 2016-08-16 */
+
+// -------------------------------------
+// EXTEND
+
+	// SIZE	
+
+	%icon-social {
+		background-image: url("images/icon-social.png");
+		background-repeat: no-repeat;
+		background-size: 960px;
+		background-position: -960px 0;
+		width: 48px;
+		height: 48px;
+		display: inline-block;
+		text-indent: -9999px;
+	}
+	%icon-social-sml {}
+	%icon-social-med {}
+	%icon-social-lrg {}
+
+	// SOCIAL MEDIA
+
+	%icon-emailsocial {
+		background-position: -403px 0;
+	}
+	%icon-facebook {
+		background-position: 0 0;
+	}
+	%icon-google {
+		background-position: -115px 0;
+	}
+	%icon-instagram {
+		background-position: -230px 0;
+	}
+	%icon-linkedin {
+		background-position: -173px 0;
+	}
+	%icon-paypal {
+		background-position: -634px 0;
+	}
+	%icon-pinterest {
+		background-position: -461px 0;
+	}
+	%icon-rss {
+		background-position: -518px 0;
+	}
+	%icon-skype {
+		background-position: -576px 0;
+	}
+	%icon-twitter {
+		background-position: -58px 0;
+	}
+	%icon-youtube {
+		background-position: -288px 0;
+	}
+	%icon-vimeo {
+		background-position: -346px 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.icon-social {
+		@extend %icon-social !optional;
+	}
+
+	.icon-sml {
+		@extend %icon-social-sml !optional;
+	}
+
+	.icon-med {
+		@extend %icon-social-med !optional;
+	}
+
+	.icon-lrg {
+		@extend %icon-social-lrg !optional;
+	}
+
+	.icon-emailsocial {
+		@extend %icon-social !optional;
+		@extend %icon-emailsocial !optional;
+	}
+
+	.icon-facebook {
+		@extend %icon-social !optional;
+		@extend %icon-facebook !optional;
+	}
+
+	.icon-instagram {
+		@extend %icon-social !optional;
+		@extend %icon-instagram !optional;
+	}
+
+	.icon-linkedin {
+		@extend %icon-social !optional;
+		@extend %icon-linkedin !optional;
+	}
+
+	.icon-google {
+		@extend %icon-social !optional;
+		@extend %icon-google !optional;
+	}
+
+	.icon-paypal {
+		@extend %icon-social !optional;
+		@extend %icon-paypal !optional;
+	}
+
+	.icon-rss {
+		@extend %icon-social !optional;
+		@extend %icon-rss !optional;
+	}
+
+	.icon-twitter {
+		@extend %icon-social !optional;
+		@extend %icon-twitter !optional;
+	}
+
+	.icon-pinterest {
+		@extend %icon-social !optional;
+		@extend %icon-pinterest !optional;
+	}
+
+	.icon-youtube {
+		@extend %icon-social !optional;
+		@extend %icon-youtube !optional;
+	}

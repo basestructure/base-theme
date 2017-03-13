@@ -1,0 +1,38 @@
+/* BASE_227 | LAYOUT | 227_BASE | STRUCTURE - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	// HTML
+
+	%html {}
+
+	// BODY
+
+	%body {}
+
+	// SITE-CONTAINER
+
+	%sitecontainer {}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// HTML
+
+	html {
+		@extend %html !optional;
+	}
+
+	// BODY
+
+	body {
+		@extend %body !optional;
+	}
+
+	// SITE-CONTAINER
+
+	.site-container {
+		@extend %sitecontainer !optional;
+	}

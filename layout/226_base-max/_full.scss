@@ -1,0 +1,47 @@
+/* BASE_226 | LAYOUT | 226_BASE-MAX | FULL - 2016-02-04 */
+
+// -------------------------------------
+// FORMULA
+
+	%full-csw-formula {}
+	%full-content-formula {}
+
+	%siteinnermax-full-csw-formula {}
+	%siteinnermax-full-content-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%full-csw {
+		float: none;
+	}
+
+	%full-content {
+		float: none;
+		padding: 3rem;
+	}
+
+	%siteinnermax-full-csw {}
+	%siteinnermax-full-content {}
+
+// -------------------------------------
+// SELECTORS
+
+	.full-width-content .content-sidebar-wrap {
+		@extend %full-csw-formula !optional;
+		@extend %full-csw !optional;
+	}
+
+	.full-width-content .content {
+		@extend %full-content-formula !optional;
+		@extend %full-content !optional;
+	}
+
+	.siteinner-max.full-width-content .content-sidebar-wrap {
+		@extend %siteinnermax-full-csw-formula !optional;
+		@extend %siteinnermax-full-csw !optional;
+	}
+	.siteinner-max.full-width-content .content {
+		@extend %siteinnermax-full-content-formula !optional;
+		@extend %siteinnermax-full-content !optional;
+	}

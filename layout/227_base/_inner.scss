@@ -1,0 +1,96 @@
+/* BASE_227 | LAYOUT | 227_BASE | INNER - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-INNER
+
+	%siteinner {
+		@extend %boxsizing-borderbox !optional;
+	}
+	%siteinnerwrap {
+		max-width: #{$width-base}rem;
+		margin-right: auto;
+		margin-left: auto;
+		@extend %boxsizing-borderbox !optional;
+	}
+	%siteinnerwraponly {}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	%csw {
+		overflow: hidden;
+		@extend %csw !optional;
+		@extend %responsive-layout-max !optional;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	// CONTENT
+
+	%content {
+		width: 70%;
+		float: left;
+		overflow: hidden;
+		@extend %content !optional;
+		@extend %responsive-layout-max !optional;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	// SIDEBAR-PRIMARY
+
+	%sidebarprimary {
+		width: 30%;
+		float: right;
+		@extend %sidebarprimary !optional;
+		@extend %responsive-layout-max !optional;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	// SIDEBAR-SECONDARY
+
+	%sidebarsecondary {
+		@extend %sidebarsecondary !optional;
+		@extend %responsive-layout-max !optional;
+		@extend %boxsizing-borderbox !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-INNER
+
+	.site-inner {
+		@extend %siteinner !optional;
+
+		.wrap {
+			@extend %siteinnerwrap !optional;
+		}
+	}
+	.site-inner > .wrap {
+		@extend %siteinnerwraponly !optional;
+	}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	.content-sidebar-wrap {
+		@extend %default-csw !optional;
+	}
+
+	// CONTENT
+
+	.content {
+		@extend %default-content !optional;
+	}
+
+	// SIDEBAR-PRIMARY
+
+	.sidebar-primary {
+		@extend %default-sidebarprimary !optional;
+	}
+
+	// SIDEBAR-SECONDARY
+
+	.sidebar-secondary {
+		@extend %default-sidebarsecondary !optional;
+	}
+

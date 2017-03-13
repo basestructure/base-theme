@@ -1,0 +1,81 @@
+/* BASE_227 | LAYOUT | 227_BASE | HEADER - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-HEADER
+
+	%siteheader {}
+	%siteheaderwrap {
+		max-width: #{$width-base}rem;
+		margin-right: auto;
+		margin-left: auto;
+		@extend %boxsizing-borderbox !optional;
+	}
+	%siteheaderwraponly {}
+
+	// HEADER-WIDGET-AREA
+
+	%headerwidgetarea {}
+
+	// TITLE-AREA
+
+	%titlearea {}
+
+	// SITE-TITLE
+
+	%sitetitle {}
+	%sitetitle-a {}
+	%sitetitle-hvr {}
+
+	// SITE-DESCRIPTION
+
+	%sitedescription {}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-HEADER
+
+	.site-header {
+		@extend %siteheader !optional;
+		
+		.wrap {
+			@extend %siteheaderwrap !optional;
+		}
+	}
+	.site-header > .wrap {
+		@extend %siteheaderwraponly !optional;
+	}
+
+	// HEADER-WIDGET-AREA
+
+	.header-widget-area {
+		@extend %headerwidgetarea !optional;
+	}
+
+	// TITLE-AREA
+
+	.title-area {
+		@extend %titlearea !optional;
+	}
+
+	// SITE-TITLE
+
+	.site-title {
+		@extend %sitetitle !optional;
+
+		a {
+			@extend %sitetitle-a !optional;
+		}
+		a:hover {
+			@extend %sitetitle-hvr !optional;
+		}
+	}
+
+	// SITE-DESCRIPTION
+
+	.site-description {
+		@extend %sitedescription !optional;
+	}

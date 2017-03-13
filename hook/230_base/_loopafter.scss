@@ -1,0 +1,19 @@
+/* BASE_230 | HOOK | 230_BASE | LOOPAFTER - 2016-08-17 */
+
+// -------------------------------------
+// EXTEND
+
+	%loopafter {}
+	%loopafter-hookwrap {}
+
+// -------------------------------------
+// SELECTORS
+
+	.loopafter {
+		@extend %loopafter !optional;
+	
+		.hookwrap {
+			@extend %loopafter-hookwrap !optional;		
+		}
+
+	}

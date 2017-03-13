@@ -1,0 +1,65 @@
+/* BASE_226 | LAYOUT | 226_BASE-MAX | CS - 2016-02-04 */
+
+// -------------------------------------
+// FORMULA
+
+	%cs-csw-formula {}
+	%cs-content-formula {}
+	%cs-sidebarprimary-formula {}
+
+	%siteinnermax-cs-csw-formula {}
+	%siteinnermax-cs-content-formula {}
+	%siteinnermax-cs-sidebarprimary-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%cs-csw {
+		float: left;
+		padding: 3rem;
+	}
+
+	%cs-content {
+		float: left;
+	}
+
+	%cs-sidebarprimary {
+		float: right;
+	}
+
+	%siteinnermax-cs-csw {}
+	%siteinnermax-cs-content {}
+	%siteinnermax-cs-sidebarprimary {}
+
+// -------------------------------------
+// SELECTORS
+
+	.content-sidebar .content-sidebar-wrap {
+		@extend %cs-csw-formula !optional;
+		@extend %cs-csw !optional;
+	}
+
+	.content-sidebar .content {
+		@extend %cs-content-formula !optional;
+		@extend %cs-content !optional;
+	}
+
+	.content-sidebar .sidebar-primary {
+		@extend %cs-sidebarprimary-formula !optional;
+		@extend %cs-sidebarprimary !optional;
+	}
+
+	.siteinner-max.content-sidebar .content-sidebar-wrap {
+		@extend %siteinnermax-cs-csw-formula !optional;
+		@extend %siteinnermax-cs-csw !optional;
+	}
+
+	.siteinner-max.content-sidebar .content {
+		@extend %siteinnermax-cs-content-formula !optional;
+		@extend %siteinnermax-cs-content !optional;
+	}
+
+	.siteinner-max.content-sidebar .sidebar-primary {
+		@extend %siteinnermax-cs-sidebarprimary-formula !optional;
+		@extend %siteinnermax-cs-sidebarprimary !optional;
+	}

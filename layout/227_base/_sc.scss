@@ -1,0 +1,37 @@
+/* BASE_227 | LAYOUT | 227_BASE | SC - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	%sc-csw {
+		float: right;
+		width: 100%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%sc-content {
+		float: right;
+		width: 70%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%sc-sidebarprimary {
+		float: left;
+		width: 30%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-content .content-sidebar-wrap {
+		@extend %sc-csw !optional;
+	}
+
+	.sidebar-content .content {
+		@extend %sc-content !optional;
+	}
+
+	.sidebar-content .sidebar-primary {
+		@extend %sc-sidebarprimary !optional;
+	}
