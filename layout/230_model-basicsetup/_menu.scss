@@ -1,4 +1,4 @@
-/* BASE_230 | LAYOUT | 230_MODEL-BASICSETUP | MENU - 2017-02-13 */
+/* BASE_230 | LAYOUT | 230_MODEL-BASICSETUP | MENU - 2017-04-25 */
 // BASE_230 | MENU | 230_BASE
 
 // -------------------------------------
@@ -6,17 +6,22 @@
 
 	// MENU
 	%menu_layout {
-		line-height: 1.75;
-		margin-left: 0;
-		list-style-type: none;
+		//line-height: 1.75;
+		//margin-left: 0;
+	}
+
+	// GENESIS-NAV-MENU
+	%menugnm_layout {
+		list-style-type: none;		// removes bullets from ul
+		margin-left: 0;				// removes left space from ul
 	}
 
 	// MENU-PRIMARY & MENU-SECONDARY
 	%menuboth_layout {
-		line-height: 1;
-		margin-bottom: 0;
+		//margin-bottom: 0;
+
 		@include responsive-range(medbelowdown) {
-			background-color: #f5f5f5;
+			//background-color: #f5f5f5;
 		}
 	}
 
@@ -41,12 +46,24 @@
 	// PREFIX MENU
 	%menu-prefix_layout {}
 
+	// GENESIS-RESPONSIVE-MENU
+	%menuresponsivemenu_layout {
+		@include responsive-range(medbelowdown) {
+			display: none;			// hides responsive submenu
+			position: relative;		// sets environment for positioned toggle buttons
+		}
+	}
+
 // -------------------------------------
 // SELECTORS
 
 	.menu {
 		@extend %menu !optional;
 		@extend %menu_layout !optional;
+	}
+
+	.genesis-nav-menu {
+		@extend %menugnm_layout !optional;
 	}
 
 	.menu-primary {
@@ -74,4 +91,9 @@
 	.footer-widgets .menu {
 		@extend %menu-footerwidgets !optional;
 		@extend %menu-footerwidgets_layout !optional;
+	}
+
+	.genesis-responsive-menu {
+		@extend %menuresponsivemenu !optional;
+		@extend %menuresponsivemenu_layout !optional;
 	}

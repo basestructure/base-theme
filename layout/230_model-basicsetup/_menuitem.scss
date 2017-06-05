@@ -1,4 +1,4 @@
-/* BASE_230 | LAYOUT | 230_MODEL-BASICSETUP | MENUITEM - 2017-02-13 */
+/* BASE_230 | LAYOUT | 230_MODEL-BASICSETUP | MENUITEM - 2017-04-20 */
 // BASE_230 | MENU | 230_BASE
 
 // -------------------------------------
@@ -6,7 +6,7 @@
 
 	// MENU-ITEM
 	%menuitem_layout {
-		font-weight: $fontweight-thin;
+		//font-weight: $fontweight-thin;
 	}
 	%menuitem-a_layout {}
 	%menuitem-hvr_layout {}
@@ -21,34 +21,50 @@
 		%menu-menuitemhaschildren-a_layout {}
 		%menu-menuitemhaschildren-hvr_layout {}
 
-	// MENU-ITEM (PRIMARY & SECONDARY)
-	%menuboth-menuitem_layout {
-		font-size: #{$fontsize-xsml}rem;
-		font-weight: $fontweight-normal;
-		text-transform: uppercase;
-
+	// MENU-ITEM (GRM GNM)
+	%grm-gnm-menuitem_layout {
 		@include responsive-range(medbelowdown) {
+									// keeps the toggle buttons isolated in its own menuitem
 			display: block;
+			float: none;
 			position: relative;
 			text-align: left;
+		}
+	}
+	%grm-gnm-menuitem-focus_layout {}
+	%grm-gnm-menuitem-a_layout {}
+	%grm-gnm-menuitem-hvr_layout {}
+
+	// MENU-ITEM (PRIMARY & SECONDARY)
+	%menuboth-menuitem_layout {
+		//font-size: #{$fontsize-xsml}rem;
+		//font-weight: $fontweight-normal;
+		//text-transform: uppercase;
+
+		@include responsive-range(medbelowdown) {
+			//display: block;
+			//position: relative;
+			//text-align: left;
 		}
 	}
 	%menuboth-menuitem-a_layout {}
 	%menuboth-menuitem-hvr_layout {
 		@include responsive-range(medbelowdown) {
-			position: relative;
+			//position: relative;
 		}
 	}
 		
 		// LEVEL 1 MENU-ITEM (PRIMARY & SECONDARY)
 		%menuboth-menuitemlvlone_layout {
-			margin-right: 1rem;
-
 			@include responsive-range(medup) {
-				display: inline-block;
-				vertical-align: top;
+				//display: inline-block;
+				//vertical-align: top;
+				//margin-right: 1rem;
+				//padding: 0.5rem 0;
 			}
-			//margin-right: #{$space-double}rem;
+			@include responsive-range(medbelowdown) {
+				//padding: 0.5rem 1rem;
+			}
 		}
 		%menuboth-menuitemlvlone-a_layout {
 			//font-size: #{$fontsize-xsml}rem;
@@ -70,8 +86,8 @@
 			//margin-right: 0;
 		}
 		%menuboth-submenu-menuitem-a_layout {
-			padding: 0.5rem;
-			display: block;
+			//padding: 0.5rem;
+			//display: block;
 			//font-size: #{$fontsize-xsml}rem;
 			//font-weight: $fontweight-thicker;
 		}
@@ -234,6 +250,27 @@
 			@extend %menuitemhaschildren-hvr !optional;
 			@extend %menuitemhaschildren-hvr_layout !optional;
 		}
+
+	// MENU-ITEM (GENESIS-RESPONSIVE-MENU GENESIS-NAV-MENU)
+	.genesis-responsive-menu .genesis-nav-menu .menu-item {
+		@extend %grm-gnm-menuitem !optional;
+		@extend %grm-gnm-menuitem_layout !optional;
+
+		:focus {
+			@extend %grm-gnm-menuitem-focus !optional;
+			@extend %grm-gnm-menuitem-focus_layout !optional;
+		}
+
+		a {
+			@extend %grm-gnm-menuitem-a !optional;
+			@extend %grm-gnm-menuitem-a_layout !optional;
+		
+			&:hover {
+				@extend %grm-gnm-menuitem-hvr !optional;
+				@extend %grm-gnm-menuitem-hvr_layout !optional;
+			}
+		}
+	}
 
 	// MENU-ITEM
 	.menu-primary .menu-item {

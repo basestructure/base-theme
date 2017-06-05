@@ -1,0 +1,114 @@
+/* BASE_230 | LAYOUT | 230_MODEL-BASICSETUP | MENUTOGGLE - 2017-02-13 */
+// BASE_230 | MENU | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%both-toggle {
+		display: none;
+		visibility: hidden;
+
+		@include responsive-range(medbelowdown) {
+			color: #fff;
+			background-color: $color-link;
+
+			// also overrides the default set on a button selector
+			padding: 0;
+			border-width: 0;
+			border-radius: 0;
+
+			margin: 0 auto;
+			text-align: center;
+
+			display: block;
+			overflow: hidden;
+			visibility: visible;
+		}
+	}
+	%both-toggle-hoverfocus {}
+
+	%menu-toggle {
+		width: 100%;
+		text-align: center;
+		line-height: 1.4;
+		padding: 0.5rem;
+	}
+	%menu-toggle-focus {}
+	%menu-toggle-hover {
+		@include responsive-range(medbelowdown) {
+			color: #fff;
+			background-color: $color-link;
+		}
+	}
+
+	%menu-toggle-before {}
+	%menu-toggle-activatedbefore {}
+
+	%submenu-toggle {
+		@include responsive-range(medbelowdown) {
+			float: right;
+			position: absolute;
+			right: 1rem;	// this makes up for the buttons padding
+			top: 0.5rem;	// this makes up for the buttons padding
+			z-index: 100;
+		}
+	}
+	%submenu-toggle-focus {}
+	%submenu-toggle-hover {}
+
+	%submenu-toggle-before {}
+	%submenu-toggle-activatedbefore {}
+
+// -------------------------------------
+// SELECTORS
+
+	button.menu-toggle,
+	.menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %menu-toggle !optional;
+	}
+	button.sub-menu-toggle,
+	.sub-menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %submenu-toggle !optional;
+	}
+
+	button.menu-toggle:focus,
+	.menu-toggle:focus {
+		@extend %both-toggle-hoverfocus !optional;
+		@extend %menu-toggle-focus !optional;
+	}
+	button.menu-toggle:hover,
+	.menu-toggle:hover {
+		@extend %both-toggle-hoverfocus !optional;
+		@extend %menu-toggle-hover !optional;
+	}
+
+	button.menu-toggle:before,
+	.menu-toggle:before {
+		@extend %menu-toggle-before !optional;
+	}
+	button.menu-toggle.activated::before,
+	.menu-toggle.activated::before {
+		@extend %menu-toggle-activatedbefore !optional;
+	}
+
+	button.sub-menu-toggle:focus,
+	.sub-menu-toggle:focus {
+		@extend %both-toggle-hoverfocus !optional;
+		@extend %submenu-toggle-focus !optional;
+	}
+	button.sub-menu-toggle:hover,
+	.sub-menu-toggle:hover {
+		@extend %both-toggle-hoverfocus !optional;
+		@extend %submenu-toggle-hover !optional;
+	}
+
+	button.sub-menu-toggle::before,
+	.sub-menu-toggle::before {
+		@extend %submenu-toggle-before !optional;
+	}
+	button.sub-menu-toggle.activated::before,
+	.sub-menu-toggle.activated::before {
+		@extend %submenu-toggle-activatedbefore !optional;
+	}
